@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ohms Law</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Courses.html">Courses</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Organisations.html">Contact</a>
+        <a href="Library.html">Library</a>
+    </nav>
+    <div id="one">
+        <h1>Ohm's Law</h1>
+        <p> Ohm’s law is one of the most popular and important laws that
+            helps us define the relationship between voltage, current and resistance.
+            The law was first established by a German physicist named Georg Simon Ohm,
+            and was the most important theory to describe the quantitative characteristics
+            of the physics of electricity.</p>
+        <h2 id="header_content">What Is Ohm’s Law?</h2>
+        <p>Ohm’s law states that the current through a conductor between two points is
+            directly proportional to the voltage across the two points.
+            Ohm’s law formula is written as;<br><br>
+
+            <b>V ∝ I</b><br><br>
+
+            Therefore, V = RI where R is a constant called resistance. R depends on the
+            dimensions of the conductor and also on the material of the conductor.
+            Its SI unit is Ohm (Ω).
+        </p>
+        <img src="Ohm’s-Law-and-Resistance-1.png" alt="OHMS LAW" style="width: 300px;height: 300px;">
+        <h3>Advantages:</h3>
+        <p>
+            The advatages are stated as folllows:
+
+        </p>
+
+        <ul style="list-style-type: disc;">
+            <li><b>Predictability:</b> Ohm's Law provides a simple and straightforward mathematical relationship between voltage, current, and resistance in an electrical circuit</li>
+            <li><b>Universal Applicability:</b> Ohm's Law is applicable to a wide range of electrical circuits, from simple resistive circuits to more complex ones involving reactive components like capacitors and inductors.</li>
+            <li><b>Ease of Use:</b> The mathematical formulation of Ohm's Law (V = IR) is relatively simple and easy to understand, making it accessible to students and practitioners at all levels of expertise.</li>
+            <li><b>Consistency:</b> Ohm's Law holds true under a wide variety of conditions, including changes in temperature, pressure, and other environmental factors.</li>
+            
+        </ul>
+
+        <h3> Disadvantages:</h3>
+        <p>
+            The disadvatages are stated as folllows:
+        </p>
+
+        <ul style="list-style-type: disc;">
+            <li><b>Assumes Linear Behavior: </b>Ohm's Law is based on the assumption of linearity, meaning that the relationship between voltage, current, and resistance remains constant over a wide range of values.</li>
+            <li><b>Resistance Variation:</b> Ohm's Law assumes that resistance is constant and does not vary with factors such as temperature or frequency</li>
+            <li><b>Complex Circuits:</b> While Ohm's Law is useful for analyzing simple circuits, it may become less practical for complex circuits involving multiple components and interactions. </li>
+            
+        </ul>
+        <h3>Applications of Ohm’s Law</h3>
+        <p>
+            Ohm’s law is very useful and has several applications. A few are listed below:
+
+        </p>
+
+        <ul style="list-style-type: disc;">
+            <li>It is widely used in circuit analysis.</li>
+            <li>It is used in ammeter, multimeter, etc.</li>
+            <li>It is used to design resistors.</li>
+            <li>It is used to get the desired circuit drop in circuit design.</li>
+            <li>Advanced laws such as Kirchhoff’s Norton’s law, Thevenin’s law are based on Ohm’s law.</li>
+            <li>Electric heaters, kettles and other types of equipment working principle follow Ohm’s law.</li>
+            <li>A laptop and mobile charger using DC power supply in operation and working principle of DC power supply
+                depend on Ohm’s law.</li>
+        </ul>
+
+    </div>
+    <div id="left_content">
+        <!-- <ul style="list-style-type: none; margin-left: 0px;border: 1px black solid;"> -->
+        <li id="content"><a href="#" id="theory_link">Theory</a></li>
+        <li id="content_1"><a href="#" id="stimulation_link">Simulation</a></li>
+        <li id="content_2"><a href="#" id="test_link">Test</a></li>
+        <!-- </ul> -->
+    </div>
+
+    <div id="two" style="display:none;">
+        <div id="container_lab">
+            <img id="wire_1" src="wire.png" alt="resistor-symbol">
+            <img id="a1" src="resistor_symbol.png" alt="resistor-symbol">
+            <img id="w2" src="wire.png" alt="resistor-symbol">
+            <img id="w3" src="wire.png" alt="resistor-symbol">
+            <img id="w4" src="wire.png" alt="resistor-symbol">
+            <img id="v1" src="vertical_line.png"><br>
+            <img id="v2" src="vertical_line.png"><br>
+            <img id="a2" src="voltmeter.png" alt="resistor-symbol">
+            <img id="v3" src="vertical_line.png">
+            <img id="v4" src="vertical_line.png">
+            <img id="v5" src="vertical_line.png">
+            <img id="a3" src="battery.png" alt="resistor-symbol">
+            <img id="a4" src="switch_on.png" alt="resistor-symbol">
+            <img id="w6" src="wire.png" alt="resistor-symbol">
+            <img id="w5" src="wire.png" alt="resistor-symbol">
+            <img id="w7" src="wire.png" alt="resistor-symbol">
+            <img id="w8" src="wire.png" alt="resistor-symbol">
+            <input type="text" value="" placeholder="Current" id="input_values_1">
+            <input type="text" value="" placeholder="Voltage" id="input_values_2"
+                style="position: relative;top:-20px;left:-265px;">
+            <input type="text" value="" placeholder="Resistance" id="input_values_3"
+                style="position: relative;top:-360px;left:-265px;">
+            <input type="button" value="Calculate" onclick="cal()" id="button_1" style="position: relative;left:30px">
+            <input type="button" value="Reload" onclick="clearValue()" id="button_1" style="position: relative;left:587px">
+
+        </div>
+    </div>
+    <div id="three" style="display: none;">
+        <div class="app">
+            <h1>Simple Quiz</h1>
+            <div class="quiz">
+                <h2 id="question"> Question goes here</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+                <button id="next-btn">Next</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        function cal() {
+            var current = parseFloat(document.getElementById("input_values_1").value);
+            var voltage = parseFloat(document.getElementById("input_values_2").value);
+            var resistance = parseFloat(document.getElementById("input_values_3").value);
+
+            if (!isNaN(current) && !isNaN(voltage)) {
+            var calculatedResistance = voltage / current;
+            document.getElementById('input_values_3').value = calculatedResistance.toFixed(2);
+            } else if (!isNaN(current) && !isNaN(resistance)) {
+            var calculatedVoltage = current * resistance;
+            document.getElementById('input_values_2').value = calculatedVoltage.toFixed(2);
+            } else if (!isNaN(voltage) && !isNaN(resistance)) {
+            var calculatedCurrent = voltage / resistance;
+            document.getElementById('input_values_1').value = calculatedCurrent.toFixed(2);
+        }
+        }
+        // function clearValue(){
+        //     var div = document.getElementById("two");
+        //     var content = div.innerHTML;
+        //     div.innerHTML= content;
+        // }
+
+
+        document.getElementById("theory_link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default behavior of anchor tag
+            document.getElementById("one").style.display = "block";
+            document.getElementById("two").style.display = "none";
+            document.getElementById("three").style.display = "none";
+        });
+
+        document.getElementById("stimulation_link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default behavior of anchor tag
+            document.getElementById("one").style.display = "none";
+            document.getElementById("two").style.display = "block";
+            document.getElementById("three").style.display = "none";
+        });
+
+        document.getElementById("test_link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default behavior of anchor tag
+            document.getElementById("one").style.display = "none";
+            document.getElementById("two").style.display = "none";
+            document.getElementById("three").style.display = "block";
+        });
+        const questions = [
+            {
+                question: "What is Ohm's Law?",
+                answer: [
+                    { text: "A law stating that voltage is directly proportional to current.", correct: false },
+                    { text: "A law stating that resistance is directly proportional to current. ", correct: false },
+                    { text: "A law stating that current is directly proportional to resistance", correct: true },
+                    { text: " A law stating that voltage is inversely proportional to resistance.", correct: false },
+                ]
+            },
+            {
+                question: "Which of the following equations represents Ohm's Law?",
+                answer: [
+                    { text: "V = I + R", correct: false },
+                    { text: "V = I X R", correct: true },
+                    { text: "V = I - R", correct: false },
+                    { text: "V = I / R", correct: false },
+                ]
+            },
+            {
+                question: "A circuit has a resistance of 20 ohms. If a current of 5 amperes flows through it, what is the voltage across the circuit?",
+                answer: [
+                    { text: "25 volts ", correct: false },
+                    { text: "100 volts", correct: true },
+                    { text: "250 volts", correct: false },
+                    { text: "2500 volts", correct: false },
+                ]
+            },
+            {
+                question: "A circuit has a voltage of 120 volts and a resistance of 15 ohms. What is the current flowing through the circuit?",
+                answer: [
+                    { text: "0.125 amperes", correct: true },
+                    { text: "8.5 amperes ", correct: false },
+                    { text: "8 amperes", correct: false },
+                    { text: "135 amperes", correct: false },
+                ]
+            },
+            {
+                question: "A circuit has a current of 2 amperes flowing through it. If the voltage across the circuit is 24 volts, what is the resistance of the circuit?",
+                answer: [
+                    { text: "12 ohms", correct: true },
+                    { text: "26 ohms ", correct: false },
+                    { text: "48 ohms", correct: false },
+                    { text: "24 ohms", correct: false },
+                ]
+            },
+        ];
+
+        const questionElement = document.getElementById("question");
+        const answerButtons = document.getElementById("answer-buttons");
+        const nextButton = document.getElementById("next-btn");
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function startQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            nextButton.innerHTML = "Next";
+            showQuestion();
+        }
+
+        function showQuestion() {
+            resetState();
+            let currentQuestion = questions[currentQuestionIndex];
+            let questionNo = currentQuestionIndex + 1;
+            questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+            currentQuestion.answer.forEach(answer => {
+                const button = document.createElement("button");
+                button.innerHTML = answer.text;
+                button.classList.add("btn");
+                answerButtons.appendChild(button);
+                if (answer.correct) {
+                    button.dataset.correct = answer.correct;
+                }
+                button.addEventListener("click", selectAnswer);
+            });
+        }
+
+        function resetState() {
+            nextButton.style.display = "none";
+            while (answerButtons.firstChild) {
+                answerButtons.removeChild(answerButtons.firstChild);
+            }
+        }
+
+        function selectAnswer(e) {
+            const selectedBtn = e.target;
+            const isCorrect = selectedBtn.dataset.correct === "true";
+            if (isCorrect) {
+                selectedBtn.classList.add("correct");
+                score++; // Increment score for correct answer
+            } else {
+                selectedBtn.classList.add("incorrect");
+            }
+            Array.from(answerButtons.children).forEach(button => {
+                if (button.dataset.correct === "true") {
+                    button.classList.add("correct");
+                }
+                button.disabled = true;
+            });
+            setTimeout(() => {
+                showNextQuestion();
+            }, 250);
+
+            // Show the next button after selecting an answer
+            nextButton.style.display = "block";
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                showQuestion();
+            } else {
+                // Quiz ended, display score or any other logic
+                alert("Quiz ended. Your score is: " + score);
+            }
+        }
+
+        nextButton.addEventListener("click", nextQuestion);
+
+        startQuiz();
+    </script>
+</body>
+
+</html>
